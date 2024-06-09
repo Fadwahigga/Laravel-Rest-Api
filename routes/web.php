@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 Route::get('/student', [StudentController::class, 'getAllStudent']);
 Route::post('/student', [StudentController::class, 'addStudent']);
+Route::put('/student/edit/{id', [StudentController::class, 'editStudent']);
+Route::delete('/student/delete/{id', [StudentController::class, 'deleteStudent']);
