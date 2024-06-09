@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function GetAllStudent()
+    public function getAllStudent()
     {
         $student = Student::all();
         $data = [
@@ -15,5 +15,8 @@ class StudentController extends Controller
             'student' => $student
         ];
         return response()->json($data, 200);
+    }
+    public function addStudent(Request $request){
+
     }
 }

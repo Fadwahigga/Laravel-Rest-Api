@@ -5,4 +5,5 @@ use App\Http\Controllers\StudentController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/student', [StudentController::class, 'GetAllStudent']);
+Route::get('/student', [StudentController::class, 'getAllStudent']);
+Route::post('/student', [StudentController::class, 'addStudent']);
